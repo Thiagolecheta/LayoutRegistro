@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/estilo.css">
+    <script src="https://kit.fontawesome.com/19325bb10d.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function (){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        }
+        </script>
+    <title>Registro</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/img/logo.png" alt="logo">
+        </div>
+        <div class="menu">
+            <nav>
+                <div class="menuMobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
+                <ul>
+                    <a href=""><li>registro</li></a>
+                    <a href=""><li>login</li></a>
+                    <a href=""><li>about us</li></a>
+                    <a href=""><li>contact us</li></a>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="geral">
+    <div class="container colunm">
+        <div class="titulo_registro">
+            <h1>Registro</h1>
+        </div>
+          <div class="formulario_geral">
+            <form class="formulario">
+                <label for="">Email
+                    <input type="email">
+                </label>
+                <label for="">Password
+                    <input type="password">
+                </label>
+                <label for="">Password Confirmation
+                    <input type="password">
+                </label>
+                <label for="">Username
+                    <input type="text">
+                </label>
+                <label for="">Name
+                    <input type="text">
+                </label>
+                <label for="">Photo
+                    <input class="arquivo"type="file">
+                </label>
+                <label class="check">
+                    <input class="input_check" type="checkbox" checked="checked">
+                    Lorem Ipsum is simply dummy text of the printing dfdfggrgregegrgrggrgrgg.
+                    <span class="checkmark"></span>
+                </label>
+                <label class="check">
+                    <input class="input_check" type="checkbox" >
+                    Lorem Ipsum is simply dummy <a href=""> of the printing and typesetting industry. </a>
+                    <span class="checkmark"></span>
+                </label>
+                <label>
+                    <button class="registro">Registrar</button>
+                </label>
+            </form>
+        </div>
+    </div>
+</section>  
+</body>
+</html>
